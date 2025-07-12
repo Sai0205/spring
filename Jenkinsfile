@@ -1,7 +1,8 @@
 pipeline{
+
     agent any
 
-    satges{
+    stages{
         stage(checkout){
             echo "code checkout"
         }
