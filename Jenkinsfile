@@ -16,7 +16,7 @@ pipeline{
                 sh 'pwd'
                 sh 'ls'
                 git url: 'https://github.com/Sai0205/spring.git' , branch: 'main'
-                sh 'pwd
+                sh 'pwd'
                 sh 'ls'
             }
         }
