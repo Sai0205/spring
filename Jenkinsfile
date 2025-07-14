@@ -18,23 +18,23 @@ pipeline{
                 echo "Running on agent: ${env.NODE_NAME}"
             }
         }
-        stage(checkout){
-            steps{
-                echo "code checkout"
-                sh "pwd"
-                sh "ls"
-                checkout scm
-            }
-        }
-        stage(checkouts){
-            steps{
-                sh 'pwd'
-                sh 'ls'
-                git url: 'https://github.com/Sai0205/spring.git' , branch: 'feature'
-                sh 'pwd'
-                sh 'ls'
-            }
-        }
+        // stage(checkout){
+        //     steps{
+        //         echo "code checkout"
+        //         sh "pwd"
+        //         sh "ls"
+        //         checkout scm
+        //     }
+        // }
+        // stage(checkouts){
+        //     steps{
+        //         sh 'pwd'
+        //         sh 'ls'
+        //         git url: 'https://github.com/Sai0205/spring.git' , branch: 'feature'
+        //         sh 'pwd'
+        //         sh 'ls'
+        //     }
+        // }
 
     }
 }
