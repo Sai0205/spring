@@ -15,7 +15,7 @@ pipeline{
             steps{
                 sh 'pwd'
                 sh 'ls'
-                git url: 'https://github.com/Sai0205/spring.git' , branch: 'main'
+                git url: 'https://github.com/Sai0205/spring.git' , branch: 'feature'
                 sh 'pwd'
                 sh 'ls'
             }
